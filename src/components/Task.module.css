@@ -1,0 +1,81 @@
+.tasks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 46rem;
+    background-color: var(--gray-400);
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 0.75rem;
+    
+}
+
+.tasks:first-child{
+    margin-top: 1.5rem;
+}
+
+.tasks input{
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 8px;
+    background-color: var(--gray-400);
+    border: 2px solid var(--blue);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tasks input:checked:before{
+    content: 'V';
+    color: var(--White);
+    text-align: center;
+    vertical-align: middle;
+    
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: var(--purple);
+    border-radius: 8px;
+    
+}
+
+
+.content{
+    color: var(--gray-100);
+    width: 39.5rem;
+}
+
+.tasks svg{
+    color: var(--gray-300);
+    cursor: pointer;
+
+}
+
+.tasks svg:hover{
+    color: var(--Danger);
+}
+
+.isCompleted{
+    text-decoration: line-through;
+    color: var(--gray-300);
+    width: 39.5rem;
+
+}
+
+.trashBtn{
+    background: transparent;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .tasks{
+        width: 20.37rem;
+    }
+
+    .isCompleted, .content{
+        width: 14.37rem;
+    }
+}

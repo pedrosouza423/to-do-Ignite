@@ -1,0 +1,153 @@
+.app{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--gray-500);
+}
+
+.newTasksForm{
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.newTasksForm input{
+    width: 39.875rem;
+    height: 3.375rem;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    color: var(--gray-300);
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.newTasksForm button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.25rem;
+    width: 5.625rem;
+    margin-left: 0.5rem;
+    background-color: var(--blueDark);
+    color: var(--gray-100);
+    border-radius: 8px;
+    border: none;
+}
+
+.newTasksForm button svg{
+    margin-left: 0.5rem;
+}
+
+.tasks{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.taskList{
+    max-height: 36.25rem;
+    overflow: auto;
+}
+
+.info{
+    display: flex;
+    width: 46rem;
+    justify-content: space-between;
+    margin-bottom: 00.75rem;
+}
+
+.created{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+
+.created p {
+    font-weight: bold;
+    color: var(--blue);
+    font-size: 0.875rem;
+    
+}
+
+.created span{
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+
+}
+
+.done{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+
+}
+
+.done p {
+    font-weight: bold;
+    color: var(--purple);
+    font-size: 0.875rem;
+}
+
+.done span{
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+.noTasks{
+    display: flex;
+    width: 46rem;
+    height: 15.25rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid var(--gray-300);
+    border-radius: 8px;
+}
+.noTasks p{
+    margin-top: 2rem;
+    color: var(--gray-300);
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+@media (max-width: 768px) {
+    .noTasks{
+        width: 21rem;
+    }
+
+    .taskList{
+        max-height: 27.37rem;
+        overflow: auto;
+    }
+
+    .newTasksForm{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem ;
+    }
+    .newTasksForm input{
+        width: 20.37rem;
+        margin: 0;
+        margin-bottom: 0.75rem;
+    }
+    .newTasksForm button{
+        width: 20.37rem;
+        margin: 0;
+    }
+
+    .info{
+        width: 20.37rem;
+    }
+}
